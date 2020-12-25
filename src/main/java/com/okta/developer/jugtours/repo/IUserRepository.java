@@ -5,9 +5,8 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.okta.developer.jugtours.model.Group;
+import com.okta.developer.jugtours.model.User;
 
-public interface IGroupRepository extends JpaRepository<Group, Long>{
-	
-	List<Group> findAllByUserId(String id);
+public interface IUserRepository extends JpaRepository<User, String>{
 
 }
